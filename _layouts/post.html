@@ -5,14 +5,38 @@ layout: default
 
 <!-- Main -->
 <div id="main">
-	<!-- Post -->
-	<article class="shade-two">
-	  <div class="container">
-			<header>
-				<h2>{{- page.title -}}</h2>
-				<p>{% if page.author %}{{ page.author }}, {% endif %}{{- page.date | date_to_long_string -}}</p>
-			</header>
-	    {{- content -}}
-	  </div>
-	</article>
+  <!-- Post -->
+  <article class="shade-two">
+    <div class="container">
+      <header>
+        <h2>{{- page.title -}}</h2>
+        <p>{% if page.author %}{{ page.author }}, {% endif %}{{- page.date | date_to_long_string -}}</p>
+      </header>
+      {{- content -}}
+    </div>
+  </article>
+
+  <div id="graphcomment"></div>
+  <script type="text/javascript">
+    /* - - - CONFIGURATION VARIABLES - - - */
+
+    // make sure the id is yours
+    window.gc_params = {
+      graphcomment_id: 'aheidari',
+
+      // if your website has a fixed header, indicate it's height in pixels
+      fixed_header_height: 0,
+    };
+
+    /* - - - DON'T EDIT BELOW THIS LINE - - - */
+
+
+    (function () {
+      var gc = document.createElement('script');
+      gc.type = 'text/javascript';
+      gc.async = true;
+      gc.src = 'https://graphcomment.com/js/integration.js?' + Math.round(Math.random() * 1e8);
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(gc);
+    })();
+  </script>
 </div>
