@@ -9,15 +9,13 @@ Step by step guide to use JWT as authenticator for a MVC Node application.
 
 Hello everyone,
 
-I was in the middle of an open-source project named PipesHub; I talk about it in another post. To going forward, you need to know why we need JWT?
-
-I am going to explain everything in brief, if you aren't familiar with one of these subjects, suggest you study a little about each of them.
+I was in the middle of an open-source project named PipesHub which uses JWT for authentication of clients, so i decided to share it with you; I talk about it in another post.
+To going forward, you need to know what is jwt and why we need it? I am going to explain everything in brief, if you aren't familiar with one of these subjects, suggest you study a little about each of them.
 
 ### Why we need JWT
 
 JSON Web Token is a token format to authentication and authorization of software system which communicates through the network. You can see the standard here <https://tools.ietf.org/html/rfc7519>. It consisted of 3 parts, headers + payload + signature which encoded by Base64 and separated by a '.'(dot).
-
-If implemented correctly, it is a Secure Proved way to transfer the authentication key with a stable structure lets you identify a consumer.
+If implemented correctly, it is a Secure proven way to transfer the authentication key with a stable structure lets you identify a consumer.
 
 ## Let's make something
 
