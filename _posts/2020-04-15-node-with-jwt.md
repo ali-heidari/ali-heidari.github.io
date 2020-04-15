@@ -262,10 +262,10 @@ Now open this address on the browser.
 You should see an error which says:
 **No token provided**
 
-I test it with Postman, so be sure if you have other tool or method to send test requests set the settings correctly. 
+I test it with Postman, so be sure if you have other tool or method to send test requests set the settings correctly.
 
 1. <http://localhost:3000/users/auth> for address
-2. Make sure it sets on **POST** request.
+2. Make sure it sets on **POST** request
 3. Choose x-www-form-urlencoded in body tab
 4. Set Key = pass And Value = 123 (Use wrong pass to see error)
 5. Send request
@@ -277,7 +277,7 @@ If you enter pass incorrect, you get **Invalid pass**, but if you enter correct 
 Create new tab in post man.
 
 1. <http://localhost:3000/> for address
-2. Make sure it sets on **GET** request.
+2. Make sure it sets on **GET** request
 3. Choose Authorization tab
 4. From the type list select Bearer
 5. Paste the token you received from the previous step in textbox
